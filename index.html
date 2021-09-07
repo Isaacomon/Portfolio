@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="ES">
+    <head>
+        <title>Isaac González</title>
+        <link href="icons/favicon.png" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="side-bar.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+        <style>
+            @media screen and (max-width: 720px){
+    header {
+      display: none;
+    }
+  }
+            @media screen and (min-width: 720px){
+                .menu-collapsed {
+                    display: none;
+                    width: 0;
+                    margin: 0;
+                }
+                .menu-expanded {
+                    display: none;
+                    width: 0;
+                    margin: 0;
+                }
+                body {
+                    margin-left: 0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="side-menu" class="menu-collapsed">
+            <div id="menu-btn">
+                <div class="btn-burger"></div>
+                <div class="btn-burger"></div>
+                <div class="btn-burger"></div>
+            </div>
+            <div id="profile">
+                <div id="photo"><img src="images/profile.jpg" alt=""></div>
+                <div id="name">
+                    <span>Isaac González</span>
+                </div>
+            </div>
+            <div id="menu-items">
+                <div class="item">
+                    <a href="#">
+                            <div class="icon"><img src="icons/ui-icons/png/alarm-clock.png" alt=""></div>
+                            <div class="title"><span>Portafolio</span></div>
+                    </a>
+                </div>
+            </div>
+            <div id="menu-items">
+                <div class="item">
+                    <a href="#">
+                            <div class="icon"><img src="icons/ui-icons/png/alarm-clock.png" alt=""></div>
+                            <div class="title"><span>Sobre mí</span></div>
+                    </a>
+                </div>
+            </div>
+            <div id="menu-items">
+                <div class="item">
+                    <a href="#">
+                            <div class="icon"><img src="icons/ui-icons/png/alarm-clock.png" alt=""></div>
+                            <div class="title"><span>Habilidades</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <header>
+            <nav class="header-nav">
+                    <a href="#"><img src="icons/ui-icons/svg/folder.svg" alt="Portafolio"></a>
+                    <a href="#"><img src="icons/ui-icons/svg/profile.svg" alt="Sobre mí"></a>
+                    <a href="#"><img src="icons/ui-icons/svg/usb-port.svg" alt="Habilidades"></a>
+                    <a href="#"><img src="icons/ui-icons/svg/inbox.svg" alt="Contacto"></a>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="saludo">
+                <img id="prof-pic" src="images/profile.jpg">
+            </div>
+            <div class="description">
+                <h1>¡Hola, mi nombre es Isaac González!</h1>
+                <br>
+                <br>
+                <br>
+                <p>Soy un autodidácta amante del código.</p>
+                <br>
+                <br>
+                <p>Tengo 21 años, originario de la Ciudad de México.</p>
+            </div>
+        </div>
+
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+        <script>
+            const btn = document.querySelector('#menu-btn');
+            const menu = document.querySelector('#side-menu')
+            btn.addEventListener('click', e => {
+                menu.classList.toggle("menu-expanded");
+                menu.classList.toggle("menu-collapsed");
+                
+                document.querySelector('body').classList.toggle('body-expanded')
+            })
+        </script>
+    </body>
+</html>

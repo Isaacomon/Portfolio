@@ -1,0 +1,169 @@
+:root {
+    --width: 60vh;
+    --padding: 10px;
+    --bgcolor: #0D0D0D;
+    --hovercolor: #A69492;
+    --width-collapsed: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');
+
+body {
+    background-color: #0D0D0D;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    margin-left: var(--width-collapsed);
+}
+
+.body-expanded {
+    margin-left: var(--width);
+}
+
+#main-container {
+    color: #ffff;
+}
+
+#side-menu {
+    background-color: var(--bgcolor);
+    color: #ffff;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 2px solid white;
+}
+
+#side-menu a{
+    color: #ffff;
+}
+
+#side-menu #title {
+    overflow: hidden;
+}
+
+#side-menu #menu-btn {
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collapsed);
+}
+
+#photo img {
+    width: 50px;
+    height: 50px;
+}
+
+#menu-btn:hover {
+    background-color: #ffff;
+}
+
+.btn-burger {
+    background-color: #ffff;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+#profile {
+    border-bottom: solid 1px var(--hovercolor);
+    padding: var(--padding) 0;
+    text-align: center;
+}
+
+#photo img {
+    border-radius: 100px;
+}
+
+#side-menu #profile #name, #side-menu #icon {
+    font-size: 24px;
+    padding: var(--padding);
+    overflow: hidden;
+}
+
+#side-menu #menu-items {
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #A69492;
+}
+
+.item a{
+    width: inherit;
+}
+
+#side-menu #menu-items .item .icon,
+#side-menu #menu-items .item .title {
+    font-size: 10px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+#side-menu #menu-items .item:hover {
+    background-color: #A69492;
+}
+
+#side-menu #menu-items .item .icon {
+    padding: var(--padding);
+    width: var(--width-collapsed);
+}
+
+#side-menu #menu-items .item .icon img {
+    width: 100%;
+}
+
+#side-menu #menu-items .item .icon .title {
+    padding: var(--padding) 0;
+}
+
+.menu-expanded{
+    width: var(--width);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-expanded #profile {
+    display: inline-block;
+    width: calc(100% - 50px);
+    margin-right: -5px;
+    padding: var(--padding);
+}
+
+.menu-expanded #profile span {
+    width: calc(var(--width) - var(--width-collapsed) - 5px);
+    overflow: hidden;
+}
+
+.menu-expanded #profile #photo {
+    width: 200px;
+}
+
+.menu-expanded #profile #name {
+    width: 100%;
+}
+
+.menu-collapsed {
+    width: var(--width-collapsed);
+}
+
+.menu-collapsed #profile {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.menu-collapsed #name {
+    display: none;
+}
+
+.menu-collapsed #item {
+    width: 100px;
+    display: none;
+}
