@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+body {
+    font-family: "VT323", sans-serif;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    background-color: #0B2AD9;
+    color: #e4e5ee;
+}
+
+.simple-linear {
+    background: linear-gradient(#0B2AD9, #040b35);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.barraMenu {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section {
+    width: 80%;
+    padding: 2rem;
+}
+
+.headButton {
+    font-family: 'Press Start 2P', monospace;
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 1rem;
+    border-bottom: 1px solid #e4e5ee;
+    ;
+}
+
+.headButton:hover {
+    background-color: #e4e5ee;
+    color: #0B2AD9;
+}
+
+#profilePicture {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 4px solid #e4e5ee;
+    margin-bottom: 1rem;
+}
+
+.contactButton {
+    padding: 10px;
+    justify-content: space-around;
+    height: 2rem;
+    margin: 0 1rem 0 1rem;
+    border: 0.5px solid #e4e5ee;
+}
+
+.buttonIcon {
+    width: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    filter: invert(100%);
+}
+
+.contactButton:hover {
+    background-color: #e4e5ee;
+    color: #0B2AD9;
+}
+
+.sectionIcon {
+    width: 2.5rem;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding: 3px;
+    filter: invert(100%);
+}
+
+.tecnologies{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.textForm {
+    font-family: "VT323", monospace;
+    font-size: large;
+    padding: 1rem;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    opacity: 0.7;
+}
+
+.textForm:focus {
+    border: 1px solid #e4e5ee;
+    outline: none;
+    opacity: 1;
+}
+
+.inputButton {
+    font-family: 'Press Start 2P', monospace;
+    padding: 10px;
+    background-color: #e4e5ee;
+    color: #0B2AD9;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.inputButton:hover {
+    background-color: #0B2AD9;
+    color: #e4e5ee;
+    border: 1px solid #e4e5ee;
+}
+
+footer {
+    text-align: center;
+    width: 90%;
+}
